@@ -32,7 +32,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="surface-panel overflow-hidden bg-background/70">
       <div className="grid gap-8 p-6 md:p-8 lg:grid-cols-2 lg:items-center lg:gap-12 lg:p-10">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 order-2 lg:order-1">
           <div className="flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/35 bg-primary/10 px-3 py-1 text-xs font-semibold text-accent-foreground">
               <span className="size-1.5 rounded-full bg-primary" aria-hidden="true" />
@@ -99,7 +99,7 @@ function ProjectCard({ project }: { project: Project }) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 order-1 lg:order-2">
           {primary ? (
             <BrowserFrame url={project.liveUrl}>
               <AssetSlot
