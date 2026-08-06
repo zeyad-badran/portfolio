@@ -48,7 +48,7 @@ export const projects: Project[] = [
     slug: "two-hundred-burger",
     name: "Two Hundred Burger",
     year: "2025",
-    liveUrl: "https://two-hundred-burger.vercel.app/",
+    liveUrl: "https://twohundredburger.netlify.app/",
     type: {
       en: "Restaurant Website & Digital Ordering Experience",
       ar: "موقع مطعم وتجربة طلب رقمية",
