@@ -16,7 +16,8 @@ export function Hero() {
       />
 
       <div className="container-page">
-        <div className="rise-in flex flex-col items-start gap-6">
+        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div className="rise-in flex flex-col items-start gap-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/70 px-3.5 py-1.5 text-xs font-medium text-muted-foreground">
             <span className="relative flex size-2" aria-hidden="true">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
@@ -53,8 +54,9 @@ export function Hero() {
             {t.hero.availability}
           </p>
         </div>
+
         {/* Video Player */}
-        <div className="rise-in mx-auto mt-14 max-w-4xl md:mt-20">
+        <div className="rise-in w-full max-w-xl mx-auto lg:max-w-none">
           <div className="surface-panel sheen relative overflow-hidden p-2 shadow-[var(--shadow-lift)] md:p-3 bg-black">
             <div className="relative overflow-hidden rounded-xl">
               <video 
@@ -68,6 +70,7 @@ export function Hero() {
               </video>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
