@@ -94,7 +94,7 @@ const en: Copy = {
   },
   hero: {
     eyebrow: "Independent digital product studio",
-    headline: "I turn ambitious ideas into",
+    headline: "Transforming ambitious ideas into",
     headlineAccent: "digital products that work.",
     sub: "Zeyad.dev is a studio practice for modern websites, scalable SaaS platforms and AI-powered solutions — designed with clarity, built to hold up in real use.",
     reelTitle: "Studio reel",
