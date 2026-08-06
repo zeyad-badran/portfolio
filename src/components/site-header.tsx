@@ -61,6 +61,10 @@ export function SiteHeader() {
             <a
               key={id}
               href={`#${id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
             >
               {t.nav[id]}
@@ -153,7 +157,11 @@ export function SiteHeader() {
             <a
               key={id}
               href={`#${id}`}
-              onClick={() => setOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                setOpen(false);
+                document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="rounded-xl px-3 py-3 text-base font-medium text-foreground transition-colors hover:bg-accent"
             >
               {t.nav[id]}

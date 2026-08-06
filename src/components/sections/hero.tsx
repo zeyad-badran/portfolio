@@ -42,7 +42,13 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild variant="quiet" size="xl">
-              <a href="#work">
+              <a 
+                href="#work"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <ArrowDown className="size-4" aria-hidden="true" />
                 {t.cta.work}
               </a>
