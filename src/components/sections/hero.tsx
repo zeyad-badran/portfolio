@@ -59,6 +59,7 @@ export function Hero() {
         <div className="rise-in w-full max-w-xl mx-auto lg:max-w-none flex justify-center items-center">
           <video 
             className="w-full aspect-video lg:aspect-square object-contain mix-blend-screen"
+            style={{ maskImage: "radial-gradient(circle, black 40%, transparent 80%)", WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 80%)" }}
             autoPlay
             loop
             muted
