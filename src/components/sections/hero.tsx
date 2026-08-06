@@ -56,16 +56,20 @@ export function Hero() {
         </div>
 
         {/* Side Video */}
-        <div className="rise-in w-full max-w-xl mx-auto lg:max-w-none flex justify-center items-center">
-          <video 
-            className="w-full aspect-video lg:aspect-square object-contain mix-blend-screen"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="/videos/hero-side.mp4" type="video/mp4" />
-          </video>
+        <div className="rise-in w-full max-w-xl mx-auto lg:max-w-none">
+          <div className="surface-panel sheen relative overflow-hidden p-2 shadow-[var(--shadow-lift)] md:p-3 bg-black">
+            <div className="relative overflow-hidden rounded-xl">
+              <video 
+                className="w-full aspect-video lg:aspect-square object-cover rounded-xl"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/videos/hero-side.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
         </div>
         </div>
 
