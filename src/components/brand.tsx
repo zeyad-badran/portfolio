@@ -14,11 +14,14 @@ export function ZMark({ className }: { className?: string }) {
       )}
       aria-hidden="true"
     >
-      <span className="absolute inset-0 bg-primary/12" />
-      <svg viewBox="0 0 24 24" className="relative size-5" fill="none" strokeLinecap="square">
-        <path d="M6 5h12L6 19h12" className="stroke-primary" strokeWidth="2.4" />
-        <path d="M6 5h12" className="stroke-foreground/70" strokeWidth="2.4" />
-      </svg>
+      <video
+        src="/videos/logo.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 size-full object-cover"
+      />
     </span>
   );
 }
